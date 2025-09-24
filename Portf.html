@@ -65,7 +65,6 @@
       font-weight:500;
     }
 
-    /* typing effect */
     .typing {
       display:inline-block;
       border-right:2px solid rgba(255,255,255,0.85);
@@ -93,7 +92,6 @@
     .btn:hover{transform:translateY(-3px)}
     .btn.ghost{background:var(--glass)}
 
-    /* sections */
     section{margin-top:2rem}
     h2{font-size:1.05rem; margin:0 0 1rem 0; color:var(--accent1); padding-left:8px; border-left:4px solid rgba(255,255,255,0.06)}
     .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:1rem}
@@ -102,13 +100,11 @@
     .card h3{margin:0 0 .4rem 0; font-size:1rem}
     .muted{color:var(--muted); font-size:0.92rem}
 
-    /* skills */
     .skill {margin-bottom:.8rem}
     .skill .label{display:flex; justify-content:space-between; font-size:.92rem; margin-bottom:.35rem}
     .bar {height:10px; background:rgba(255,255,255,0.06); border-radius:999px; overflow:hidden}
     .bar > i{display:block; height:100%; width:0; background: linear-gradient(90deg,var(--accent1),var(--accent2)); border-radius:999px; transition:width 1.2s cubic-bezier(.2,.9,.2,1)}
 
-    /* responsive */
     @media (max-width:900px){
       .grid{grid-template-columns:repeat(6,1fr)}
       .card{grid-column: span 6}
@@ -123,7 +119,6 @@
     }
 
     footer{margin-top:2.4rem; text-align:center; color:var(--muted); padding:2rem 1rem}
-    /* small resume modal */
     .modal {
       position:fixed; inset:0; display:flex; align-items:center; justify-content:center;
       background:rgba(0,0,0,0.6); z-index:60; opacity:0; pointer-events:none; transition:opacity .2s;
@@ -136,7 +131,6 @@
     .frame header{display:flex; justify-content:space-between; align-items:center; padding:.6rem 1rem; background:linear-gradient(90deg,var(--accent1),var(--accent2)); color:#002233}
     .frame header .close{background:transparent; border:0; color:#002233; font-weight:700; cursor:pointer}
     .frame iframe{flex:1; border:0; background:white}
-    /* little animated entrance for cards */
     .card{opacity:0; transform:translateY(6px)}
     .card.show{opacity:1; transform:translateY(0); transition:all .45s cubic-bezier(.2,.9,.2,1)}
   </style>
@@ -147,8 +141,7 @@
     <div style="max-width:1100px;margin:0 auto;">
       <div style="display:flex;gap:1rem;align-items:center;justify-content:center;flex-direction:column">
         <div style="width:96px;height:96px;border-radius:16px;overflow:hidden;border:4px solid rgba(255,255,255,0.12);">
-          <!-- YOUR PHOTO ADDED -->
-          <img src="C:\Users\HP\OneDrive\Documents\bhavishya.jpg" alt="Bhavishya" style="width:100%;height:100%;object-fit:cover;display:block" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&h=400&fit=crop&crop=face'">
+          <img src="bhavishya.jpg" alt="Bhavishya" style="width:100%;height:100%;object-fit:cover;display:block" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&h=400&fit=crop&crop=face'">
         </div>
         <h1 style="margin:.45rem 0 0;font-size:1.45rem;color:#001a26">Bhavishya Raj Mishra</h1>
         <div class="subtitle">
@@ -161,7 +154,6 @@
   <main class="container">
     <div class="hero">
       <div class="profile">
-        <!-- YOUR PHOTO ADDED -->
         <img src="C:\Users\HP\OneDrive\Documents\bhavishya.jpg" alt="Profile photo" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&h=400&fit=crop&crop=face'">
       </div>
 
@@ -171,14 +163,12 @@
 
         <div class="hero-actions">
           <button class="btn primary" id="openResume">📄 View Resume</button>
-          <!-- YOUR RESUME ADDED -->
-          <a class="btn ghost" href="C:\Users\HP\OneDrive\Documents\Mishra word file.pdf" download>⬇ Download Resume</a>
+          <a class="btn ghost" href="Mishra word file.pdf" download>⬇ Download Resume</a>
           <a class="btn" href="#projects">💼 Projects</a>
         </div>
       </div>
     </div>
 
-    <!-- Projects -->
     <section id="projects">
       <h2>Projects</h2>
       <div class="grid" id="projectsGrid">
@@ -202,7 +192,6 @@
       </div>
     </section>
 
-    <!-- Skills -->
     <section id="skills">
       <h2>Skills</h2>
       <div style="display:grid;grid-template-columns: 1fr 320px; gap:1rem; align-items:start;">
@@ -241,7 +230,6 @@
       </div>
     </section>
 
-    <!-- Achievements -->
     <section id="achievements">
       <h2>Achievements</h2>
       <div class="grid">
@@ -260,7 +248,6 @@
       </div>
     </section>
 
-    <!-- Blog -->
     <section id="blog">
       <h2>Blog</h2>
       <div class="card">
@@ -274,24 +261,20 @@
     </footer>
   </main>
 
-  <!-- Resume Modal -->
   <div class="modal" id="resumeModal" aria-hidden="true">
     <div class="frame" role="dialog" aria-modal="true">
       <header>
         <div style="font-weight:700">Resume — Bhavishya Raj Mishra</div>
         <div>
-          <!-- YOUR RESUME ADDED -->
-          <a class="btn" href="Mishra word file.pdf" download style="margin-right:.6rem">⬇</a>
+          <a class="btn" href="C:\Users\HP\OneDrive\Documents\Mishra word file.pdf" download style="margin-right:.6rem">⬇</a>
           <button class="close btn" id="closeResume">✕</button>
         </div>
       </header>
-      <!-- YOUR RESUME PDF PREVIEW -->
-      <iframe id="resumeFrame" src="Mishra word file.pdf"></iframe>
+      <iframe id="resumeFrame" src="C:\Users\HP\OneDrive\Documents\Mishra word file.pdf"></iframe>
     </div>
   </div>
 
   <script>
-    // resume modal control
     const openBtn = document.getElementById('openResume');
     const closeBtn = document.getElementById('closeResume');
     const modal = document.getElementById('resumeModal');
@@ -308,7 +291,6 @@
       if (e.target === modal) { modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); }
     });
 
-    // animate skill bars on load/scroll
     function animateSkills(){
       document.querySelectorAll('.bar i').forEach((el, idx) => {
         const w = el.getAttribute('data-w') || '70%';
@@ -316,14 +298,12 @@
       });
     }
 
-    // reveal cards with slight delay
     function revealCards(){
       document.querySelectorAll('.card').forEach((c,i)=>{
         setTimeout(()=> c.classList.add('show'), 120 + i*100);
       });
     }
 
-    // smooth scroll for internal links
     document.querySelectorAll('a[href^="#"]').forEach(a=>{
       a.addEventListener('click', e=>{
         e.preventDefault();
@@ -333,20 +313,17 @@
       });
     });
 
-    // run on load
     window.addEventListener('load', () => {
       animateSkills();
       revealCards();
     });
 
-    // if user uses keyboard esc to close modal
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && modal.classList.contains('open')) {
         modal.classList.remove('open'); modal.setAttribute('aria-hidden','true');
       }
     });
 
-    // Fallback for images if not found
     document.addEventListener('DOMContentLoaded', function() {
       const images = document.querySelectorAll('img');
       const fallbackImage = 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&h=400&fit=crop&crop=face';
